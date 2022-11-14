@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registration{% endblock %}
+
+{% block body %}
+<div id="form">
+    {{ form_start(formRegister) }}
+    {{form_widget(formRegister)}}
+    <input type="submit" id="send" value="INSCRIPTION">
+    {{ form_end(formRegister) }}
+    <button type="button"><a href="{{path('app_login')}}">Vous avez déja un compte ? Connectez Vous !</a></button>
+</div>
+    
+{% endblock %}

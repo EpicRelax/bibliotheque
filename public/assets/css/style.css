@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#form {
+    text-align: center;
+    background-color: whitesmoke;
+    width: 70%;
+    margin: 3% auto;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+#form input, #form textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#form #send{
+    margin-top: 1rem;
+}
+
+#form button {
+    margin-top: 1rem;
+    border: none;
+
+}
+
+#wrapCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#wrapCard .card{
+    width: 20%;
+    margin: 0.5rem 0.5rem;
+}
+
+#wrapCard .card a{
+    color: red;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add Livre{% endblock %}
+
+{% block body %}
+<div id="form">
+    {{ form_start(formLivre) }}
+    {{ form_widget(formLivre) }}
+    {% if id %}
+        <input type="submit" id="send" value="Modifier le livre">
+    {% else %}
+        <input type="submit" id="send" value="Ajouter un livre">
+    {% endif %}
+    {{ form_end(formLivre) }}
+</div>
+    
+{% endblock %}
